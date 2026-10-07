@@ -1,0 +1,43 @@
+/* Custom Styles for Travel Explorer */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    min-height: 80vh;
+}
+
+/* Cards Hover Effect */
+.card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Accordion Customization */
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer Styling */
+footer a {
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}

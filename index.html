@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Agence de Voyage</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">✈️️ Travel Explorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+<li class="nav-item"><a class="nav-link" href="details.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#circuits">Circuits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Découvrez le Monde Avec Nous</h1>
+            <p class="lead mb-4">Voyagez vers des destinations d'exception au meilleur prix.</p>
+            <a href="#destinations" class="btn btn-primary btn-lg shadow">Explorer les Offres</a>
+        </div>
+    </section>
+
+    <!-- 3. Destinations Section -->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nos Destinations Populaires</h2>
+                <p class="text-muted">Choisissez votre prochaine aventure parmi nos meilleures sélections.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Paris Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paris">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Paris, France</h5>
+                            <p class="card-text text-muted flex-grow-1">Découvrez la romance, la culture et les monuments emblématiques de la ville lumière.</p>
+                            <a href="details.html" class="btn btn-primary mt-2">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubaï Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Dubaï">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Dubaï, Émirats Arabe Unis</h5>
+                            <p class="card-text text-muted flex-grow-1">Plongez dans le luxe, les gratte-ciels spectaculaires et les safaris dans le désert.</p>
+                            <a href="details.html" class="btn btn-primary mt-2">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sydney Card -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sydney">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Sydney, Australie</h5>
+                            <p class="card-text text-muted flex-grow-1">Explorez des plages magnifiques, l'Opéra célèbre et une nature sauvage unique.</p>
+                            <a href="details.html" class="btn btn-primary mt-2">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Circuits Section (Accordion) -->
+    <section id="circuits" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Programme de Nos Circuits</h2>
+                <p class="text-muted">Tout ce qu'il faut savoir sur l'organisation de vos voyages.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion shadow-sm" id="accordionCircuits">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    ✈️ Ce qui est inclus dans le prix du séjour
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCircuits">
+                                <div class="accordion-body">
+                                    Le prix comprend les billets d'avion aller-retour, l'hébergement en hôtel 4 étoiles, les petits-déjeuners et les transferts depuis et vers l'aéroport.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    📄 Formalités de visa et documents requis
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCircuits">
+                                <div class="accordion-body">
+                                    Notre agence vous accompagne dans l'obtention des visas. Un passeport valide au moins 6 mois après la date de retour est obligatoire.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    🛡️ Assurance voyage et annulation
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionCircuits">
+                                <div class="accordion-body">
+                                    Toutes nos formules incluent une assurance annulation et une couverture médicale complète durant la totalité de votre séjour.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contactez-Nous</h2>
+                <p class="text-muted">Une question ? Un projet de voyage ? Laissez-nous un message.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="card p-4 shadow-sm border-0">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label font-weight-bold">Nom Complet</label>
+                            <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nom@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Votre Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Écrivez votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2026 Travel Explorer. Tous droits réservés.</p>
+            <div class="fs-4">
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
